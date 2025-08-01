@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,23 @@
 </head>
 <body>
      <h1>Exemplo de formulario</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
 <fieldset>
     <legend>Dados Pessoais</legend>
+
+    <p><label for="icor">Cor:</label>
+    <input type="color" name="cor" id="icor">
+    </p>
+
+    <p>
+        <label for="inivel">Nível de Satisfação</label>
+        <input type="range" name="nivel" id="inivel" min="1" max="5">
+    </p>
+
+    <p>
+        <label for="ifoto">Foto do perfil</label>
+        <input type="file" name="foto" id="ifoto">
+    </p>
     
             
             <p>
