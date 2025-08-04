@@ -1,3 +1,10 @@
 @charset "UTF-8";
 
-/*Configurações (portatil)
+/*Configurações (portatil)*/
+
+body {
+    background: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+}
+
+
