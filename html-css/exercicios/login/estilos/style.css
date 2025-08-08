@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        body {
+            background-color: #5f2c82;;
+        }
+
+        main.container {
+
+            height: 90vh;
+            width: 90vw;
+
+            /*Meu container pai*/
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+       
+
+        section#login > div#tela {
+        display: block;
+        background: #5f2c82 url(../imagens/logo.jpg) no-repeat;
+        background-size: cover;
+        background-position: left bottom; /*selecionou a parte de baixo*/
+        height: 200px; /*passou da tela*/
+        }
+
+        
+
+        section {
+            background-color: lightseagreen;
+            height: 500px;
+            width: 250px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    

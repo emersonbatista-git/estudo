@@ -4,12 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    
 </head>
 <body>
     <main class="container">
-        <article>
-            <h1>Login</h1>
-        </article>
+        <section id="login">
+            <div id="tela">
+            <!--Inseri imagem pelo CSS-->
+            </div>
+
+               <div id="formulario">
+                 <p>Seja benm-vindo (a) novamente.Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                 <form action="login.php" method="post" autocomplete="on">
+                <h1>Login</h1>
+
+                <i class="material-icons">person</i>
+                <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" required autocomplete="email" maxlength="30">
+                        <label for="ilogin">Login</label>
+
+                  <i class="material-icons">vpn_key</i>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" required minautocomplete="current-password" minlength="2" maxlength="8">
+                        <label for="isenha">Senha</label>   
+                        
+                        
+                           <input type="submit" value="Entrar">
+                        <!--Nao é o recomendado fazer link para, esqueci a senha, mas por enquanto vamos fazer assim, o melhor seria programação-->
+                        <a href="esqueci.html" class="botao">
+                            Esqueci a senha <i class="material-icons">mail</i> </a>
+                        
+                        
+
+                </form>
+
+               </div>
+                
+                
+            
+        </section>
 
     </main>
     
