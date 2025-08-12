@@ -11,6 +11,12 @@ header > h1 {
     flex-basis: 50px;
 }
 
-header > nav > a {
+header > nav >  a {
     width: 90vw;
+    
 }
+
+body { 
+    width: 95vw;
+}
+
