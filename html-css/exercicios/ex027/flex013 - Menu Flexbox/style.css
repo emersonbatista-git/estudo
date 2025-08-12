@@ -16,24 +16,61 @@ body {
 
 }
 
+/*Cabeçalho*/
 header {
     background-color: gray ;
     color: white;
     padding: 10px;
+
+    /*flexbox*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/*Titulo Cabeçalho*/
 header > h1 {
     /*Identificar a caixa*/
     border: 1px dotted black;
+    /*Flexbox*/
+    flex: 0 0 200px;
 }
+
+/*Menu do Cabeçalho*/
 
 header > nav {
 
     /*Identificar a caixa*/
     border: 1px dotted black;
+    /*Flexbox*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 
 }
 
+/*Link do Menu Cabeçalho*/
+header > nav > a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*Hover Link Menu Cabeçalho*/
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+    transition:background-color 0.5s;
+
+}
+
+
+/*Conteudo Principal*/
 main {
     background-color: white;
     margin: 10px;
