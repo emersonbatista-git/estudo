@@ -32,9 +32,10 @@ header {
 /*Titulo Cabeçalho*/
 header > h1 {
     /*Identificar a caixa*/
-    border: 1px dotted black;
+   /* border: 1px dotted black; */
     /*Flexbox*/
     flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.404);
 }
 
 /*Menu do Cabeçalho*/
@@ -42,7 +43,7 @@ header > h1 {
 header > nav {
 
     /*Identificar a caixa*/
-    border: 1px dotted black;
+  /*  border: 1px dotted black; */
     /*Flexbox*/
     display: flex;
     flex-flow: row wrap;
