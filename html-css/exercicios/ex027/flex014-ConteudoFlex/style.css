@@ -44,7 +44,7 @@ article.text-media {
 
 }
 
-article.media.text {
+article.media-text {
     display: flex;
     flex-flow: row wrap-reverse;
     justify-content: space-between;
