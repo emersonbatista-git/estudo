@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 
-header, header > nav {
+header, header > nav > ul {
     flex-flow: column nowrap;
 
 
@@ -11,7 +11,7 @@ header > h1 {
     flex-basis: 50px;
 }
 
-header > nav >  a {
+header > nav > ul  a {
     width: 90vw;
     
 }
@@ -19,4 +19,25 @@ header > nav >  a {
 body { 
     width: 95vw;
 }
+
+
+span#burguer {
+    background-color: black;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    width: 90vw;
+
+}
+
+span#burguer:hover {
+    background-color: white;
+    color:black
+}
+
+nav {
+        display: none;
+    }
 

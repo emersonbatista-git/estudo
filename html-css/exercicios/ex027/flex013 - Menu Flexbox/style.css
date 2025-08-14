@@ -32,7 +32,7 @@ header {
 /*Titulo Cabeçalho*/
 header > h1 {
     /*Identificar a caixa*/
-    border: 1px dotted black; 
+   /* border: 1px dotted black;*/ 
     /*Flexbox*/
     flex: 0 0 200px;
     text-shadow: 2px 2px 0px rgba(0,0,0,0.404);
@@ -41,10 +41,12 @@ header > h1 {
 /*Menu do Cabeçalho*/
 
 
-header > nav {
+
+
+header > nav > ul {
 
     /*Identificar a caixa*/
-    border: 1px dotted black; 
+   /* border: 1px dotted black; */
     /*Flexbox*/
     display: flex;
     flex-flow: row wrap;
@@ -56,8 +58,17 @@ header > nav {
 
 }
 
+    span#burguer {
+        display: none;
+    }
+
+     menu {
+        display: block;
+    }
+
+
 /*Link do Menu Cabeçalho*/
-header > nav > a {
+header > nav > ul a {
     background-color: black;
     color: white;
     
@@ -69,7 +80,7 @@ header > nav > a {
 }
 
 /*Hover Link Menu Cabeçalho*/
-header > nav > a:hover {
+header > nav > ul a:hover {
     background-color: white;
     color: black;
     transition:background-color 0.5s;
