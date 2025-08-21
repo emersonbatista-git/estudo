@@ -1,40 +1,59 @@
 @charset "UTF-8";
 
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(8, auto);
-    grid-template-rows: repeat(18, 50px);
-    gap: 5px;
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.topo {
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 80px 40px 1fr 40px;
+    grid-template-columns: 1fr 150px;
+    gap: 5px;
+    /*Utilizando largura e altura para adaptar a qualquer tela, utilizar fração na loinha e coluna que pode variar, no caso definiu a terceira linha ea primeira coluna*/   
+   
+}
+
+.caixa {
     background-color: lightgray;
-    grid-area: 1 / 1 / 3 / -1;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#topo {
+    background-color: lightgray;
+    grid-area: 1 / 1 / 2 / -1;
     
 
 }
 
-.menu {
+#menu {
     background-color: lightgreen;
-    grid-area: 3 / 1 / 3 / -1;
+    grid-area: 2 / 1 / 3 / -1;
 
 }
 
-.principal {
+#principal {
     background-color: lightcoral;
-    grid-area: 4 / 1 / 18 / 6;
+    grid-area: 3 / 1 / -2 / -2;
 
 }
 
-.secundario {
+#secundario {
     background-color: lightsalmon;
-    grid-area: 4 / 6 / 18 / 9;
+    grid-area: 3 / -2 / -2 / -1;
 
 }
 
-.rodape {
+#rodape {
     background-color: lightslategray;
-    grid-area: 18 / 1 / 18 / 9;
+    grid-area: -2 / 1 / -1 / -1;
 
 }
+
